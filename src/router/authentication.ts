@@ -1,6 +1,6 @@
 import express from 'express';
 import { login, logout, register, resetPassowrd } from '../controllers/authentication';
-import { isAuthenticated, isOwner } from '../middlewares';
+import { isAuthenticated } from '../middlewares';
 
 export default (router: express.Router) => {
     router.post('/auth/register', register)
